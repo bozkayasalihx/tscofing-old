@@ -1,0 +1,1 @@
+##  get tsconfig out of box
