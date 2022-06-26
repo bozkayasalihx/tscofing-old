@@ -12,7 +12,7 @@
     },
     "description": "get tsconfig out of box",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 0",
+        "test": "echo 'salih is best'",
         "dev": "ts-node ./src/app.ts"
     },
     "repository": {
