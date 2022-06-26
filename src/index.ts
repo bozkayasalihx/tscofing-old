@@ -157,8 +157,8 @@ class Select {
     }
 
     private configs(answer: string, dir = "./configs") {
-        const projectTopDir = this.rootDir();
         const configDir = path.resolve(__dirname, dir);
+        const tsconfig = process.cwd();
         try {
             const files = fs.readdirSync(configDir, {
                 encoding: "utf-8",
@@ -171,7 +171,7 @@ class Select {
                     if (type == answer) {
                         try {
                             fs.unlinkSync(
-                                path.resolve(projectTopDir, "tsconfig.json")
+                                path.resolve(tsconfig, "tsconfig.json")
                             );
                             const data = fs.readFileSync(
                                 path.resolve(configDir, file.name),
@@ -180,7 +180,7 @@ class Select {
                                 }
                             );
                             fs.writeFileSync(
-                                path.resolve(projectTopDir, "tsconfig.json"),
+                                path.resolve(tsconfig, "tsconfig.json"),
                                 data,
                                 "utf-8"
                             );
@@ -192,7 +192,6 @@ class Select {
                 }
             }
         } catch (err) {
-            console.log(err);
             throw new Error(JSON.stringify(err));
         }
     }
