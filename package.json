@@ -1,8 +1,12 @@
 {
     "name": "@malwareinthehouse/tsconfig",
-    "version": "1.0.0",
-    "main": "index.js",
+    "version": "1.0.5",
+    "bin": "index.ts",
+    "main": "index.ts",
     "license": "MIT",
+    "publishConfig": {
+        "@malwareinthehouse:registry": "https://npm.pkg.github.com"
+    },
     "devDependencies": {
         "@types/node": "^18.0.0"
     },
