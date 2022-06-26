@@ -1,11 +1,11 @@
 {
-    "name": "@malwareinthehouse/tsconfig",
+    "name": "@bozkayasalihx/tsconfig",
     "version": "1.0.5",
     "bin": "index.ts",
     "main": "index.ts",
     "license": "MIT",
     "publishConfig": {
-        "@malwareinthehouse:registry": "https://npm.pkg.github.com"
+        "@bozkayasalihx:registry": "https://npm.pkg.github.com"
     },
     "devDependencies": {
         "@types/node": "^18.0.0"
@@ -17,7 +17,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bozkayaSalihX/tsconfig.git"
+        "url": "git+https://github.com/bozkayasalihx/tsconfig.git"
     },
     "keywords": [
         "typescript",
@@ -26,9 +26,9 @@
     ],
     "author": "salih bozkaya <jamesgosling10@gmail.com>",
     "bugs": {
-        "url": "https://github.com/bozkayaSalihX/tsconfig/issues"
+        "url": "https://github.com/bozkayasalihx/tsconfig/issues"
     },
-    "homepage": "https://github.com/bozkayaSalihX/tsconfig#readme",
+    "homepage": "https://github.com/bozkayasalihx/tsconfig#readme",
     "dependencies": {
         "readline": "^1.3.0"
     }
